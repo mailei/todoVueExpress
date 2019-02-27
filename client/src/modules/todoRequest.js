@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const url = 'http://localhost:5000/api/posts/';
+const url = `http://localhost:5000/api/posts/`;
 
 class todoRequest {
   static getTodo() {
@@ -12,8 +12,8 @@ class todoRequest {
           data.map(todo => ({
             ...todo,
             createAt: new Date(todo.createAt)
-          })
-          ));
+          }))
+        );
       } catch (error) {
         reject(error);
       }
