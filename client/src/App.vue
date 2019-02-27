@@ -1,19 +1,13 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
-    <todoComponent />
+    <img src="./assets/logo.png">
+    <router-view/>
   </div>
 </template>
 
 <script>
-import todoComponent from './components/todoComponent.vue'
-
 export default {
-  name: 'app',
-  components: {
-    todoComponent
-  }
+  name: 'App'
 }
 </script>
 
