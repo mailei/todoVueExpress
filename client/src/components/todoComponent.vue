@@ -6,10 +6,8 @@
     <div class="todo-container">
       <div
         class="todo"
-        v-for="(todo,index) in todos"
-        v-bind:item="todo"
-        v-bind:index="index"
-        v-bind:key="todo.id"
+        v-for="(todo, key, index) in todos"
+        v-bind:key="index"
       >
         {{`${todo.createdAt.getFullYear()}/${todo.createdAt.getMonth()}/${todo.createdAt.getData()}`}}
         <p class="text">{{todo.text}}</p>
@@ -22,17 +20,17 @@
 import request from '../modules/todoRequest';
 
 export default {
-  name: 'todoComponet',
+  name: 'todoComponent',
   data() {
     return {
-      todo: [],
+      todos: [],
       error: '',
-      text: ''
+      text: '',
     };
   },
   async created() {
     try {
-      this.todo = await request.getTodo();
+      this.todos = await request.getTodo();
     } catch (error) {
       this.error = error.message;
     }
@@ -41,5 +39,5 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style scoped lang="scss">
 </style>

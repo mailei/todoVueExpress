@@ -1,30 +1,58 @@
 # client
 
-> A Vue.js project
-
-## Build Setup
-
-``` bash
-# install dependencies
+## Project setup
+```
 npm install
-
-# serve with hot reload at localhost:8080
-npm run dev
-
-# build for production with minification
-npm run build
-
-# build for production and view the bundle analyzer report
-npm run build --report
-
-# run unit tests
-npm run unit
-
-# run e2e tests
-npm run e2e
-
-# run all tests
-npm test
 ```
 
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+### Compiles and hot-reloads for development
+```
+npm run serve
+```
+
+### Compiles and minifies for production
+```
+npm run build
+```
+
+### Run your tests
+```
+npm run test
+```
+
+### Lints and fixes files
+```
+npm run lint
+```
+
+### Run your end-to-end tests
+```
+npm run test:e2e
+```
+
+### Run your unit tests
+```
+npm run test:unit
+```
+
+### Customize configuration
+See [Configuration Reference](https://cli.vuejs.org/config/).
+
+
+
+### vue-cli setting
+
+```
+? Please pick a preset: Manually select features
+? Check the features needed for your project: (Press <space> to select, <a> to toggle all, <i> to invert selection)Babel
+, PWA, Router, Vuex, CSS Pre-processors, Linter, Unit, E2E
+? Use history mode for router? (Requires proper server setup for index fallback in production) Yes
+? Pick a CSS pre-processor (PostCSS, Autoprefixer and CSS Modules are supported by default): Sass/SCSS (with dart-sass)
+? Pick a linter / formatter config: Airbnb
+? Pick additional lint features: (Press <space> to select, <a> to toggle all, <i> to invert selection)Lint on save
+? Pick a unit testing solution: Jest
+? Pick a E2E testing solution: Cypress
+? Where do you prefer placing config for Babel, PostCSS, ESLint, etc.? In dedicated config files
+? Save this as a preset for future projects? Yes
+? Save preset as:
+```
